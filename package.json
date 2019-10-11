@@ -1,0 +1,20 @@
+{
+  "name": "chat-react-socket",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "yarn start --prefix ./client ",
+    "dev": "(cd client && yarn run start) & yarn run server"
+  },
+  "dependencies": {
+    "config": "^3.2.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
